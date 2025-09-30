@@ -2,7 +2,7 @@ services:
   - type: web
     env: static
     name: library-ui
-    buildCommand: cd frontend/library-ui && npm ci && npm run build
+    buildCommand: git submodule update --init --recursive && cd frontend/library-ui && npm ci && npm run build
     staticPublishPath: frontend/library-ui/dist
     envVars:
       - key: VITE_API_BASE
