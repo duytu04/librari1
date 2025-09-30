@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/<SUB>/resourceGroups/<RG>/providers/Microsoft.Web/sites/libraryapi-prod",
+  "appService.deploySubpath": "backend/LibraryApi/publish"
+}
