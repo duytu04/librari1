@@ -1,9 +1,10 @@
 services:
-  - type: static_site
+  - type: web
+    env: static
     name: library-ui
     rootDir: frontend/library-ui
     buildCommand: npm ci && npm run build
-    publishPath: dist
+    staticPublishPath: dist
     envVars:
       - key: VITE_API_BASE
         value: https://libraryapi-prod-drbrbragdgbjg2hg.southeastasia-01.azurewebsites.net/api
